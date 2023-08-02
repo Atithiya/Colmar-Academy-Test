@@ -93,6 +93,9 @@ header{
    cursor: pointer;
    border-radius: 2px;
 }
+.header-learn button:hover{
+    background-color: #6f6f6f;
+}
 
 /* practice below */
 .practice{
@@ -147,6 +150,10 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 65%;
+}
+.practice-column-2-content p{
+    margin: 8px 0px;
 }
 .p {
  margin: 8px 0px;
@@ -165,6 +172,9 @@ header{
     padding: 32px 0px;
     font-size: 30px;
 }
+.card-container{
+    margin-bottom: 0;
+}
 .card-row{
     display: flex;
 }
@@ -173,6 +183,10 @@ header{
     margin-right: 32px;
     margin-bottom: 32px;  
     cursor: pointer;
+    border-radius: 2px;   
+}
+.card:hover{
+    background-color: #dedede;
 }
 .card img{
     height: auto;
@@ -183,10 +197,59 @@ header{
     margin-left: 16px;
     margin-bottom: 24px;
 }
-
-
+.card-content h4{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 
 /* section thesis exhibit below */
+#thesis{
+    background-color: #fff;
+    width: 100%;
+}
+.header-thesis{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.thesis-article{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.thesis-article1{
+    width: 60%;
+    border: 2px solid red;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.thesis-article1 video{
+    width: 100%;
+    border: 5px solid blue;
+}
+.thesis-article2{
+    width: 40%;
+    border: 5px solid rgb(0, 255, 85);
+}
+.thesis-article2-box{
+    outline: 2px solid orange;
+    display: flex;
+}
+.thesis-article2-box img{
+    width: 35%;
+    height: auto;
+    padding: 16px 16px;   
+}
+.thesis-article2-box-content
+{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 /* footer below */
