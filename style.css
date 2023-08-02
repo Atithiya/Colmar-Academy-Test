@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    color: #535353;
 }
 .container{
     max-width: 1440px;
@@ -56,7 +57,7 @@ header{
 /* ----ตัว Learn something below ----*/
 #learn{
     width: 100%;
-    background-color: rgb(195, 195, 195);
+    background-color: rgb(216, 216, 216);
     color: rgb(79, 79, 79);
     padding: 32px 24px;
     display: flex;  
@@ -94,7 +95,7 @@ header{
    border-radius: 2px;
 }
 .header-learn button:hover{
-    background-color: #6f6f6f;
+    background-color:rgb(151, 151, 151);
 }
 
 /* practice below */
@@ -122,7 +123,6 @@ header{
 .header-practice-box{
     margin-top: 32px;
     margin-bottom: 24px;
-    border: 1px solid red;
 }
 .header-practice{
     font-size: 40px;
@@ -135,7 +135,7 @@ header{
     cursor: pointer; 
 }
 .practice-column-2{
-    outline: 0.5px solid #aeaeae;
+    outline: 2px solid #e4e4e4;
     display: flex;
 }
 .practice-column-2 img{
@@ -222,21 +222,29 @@ header{
 }
 .thesis-article1{
     width: 60%;
-    border: 2px solid red;
     padding-left: 24px;
     padding-right: 24px;
 }
 .thesis-article1 video{
     width: 100%;
-    border: 5px solid blue;
+}
+.thesis-video-content
+{
+    margin-top:24px ;
+    margin-bottom: 24px;
+}
+.thesis-video-content h3{
+    margin-bottom: 8px;
 }
 .thesis-article2{
     width: 40%;
-    border: 5px solid rgb(0, 255, 85);
 }
 .thesis-article2-box{
-    outline: 2px solid orange;
     display: flex;
+}
+.thesis-article2-box:hover{
+    background-color: #dedede;
+    cursor: pointer;
 }
 .thesis-article2-box img{
     width: 35%;
@@ -250,11 +258,15 @@ header{
     flex-direction: column;
     justify-content: center;
 }
-
-
 /* footer below */
 #footer-copyrights{
     display: flex;
     justify-content: space-between;
-    margin-left: 24px;
+    padding: 16px 24px;
+    border-top: 1px solid rgb(230, 230, 230);
+}
+
+/* Mobile */
+@media only screen and (min-width: 541px) {
+
 }
