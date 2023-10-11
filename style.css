@@ -35,8 +35,14 @@ header{
     flex-direction: row;
     align-items:center;
     padding: 0 24px; 
-    
+   
 }
+.navlink:hover{
+    opacity: 0.7;
+
+}
+
+
 /* ทำให้โลโก้เสือเป็น Flex */
 .holder-logo {
     display: flex;
@@ -52,6 +58,7 @@ header{
 /* ช่องว่างระหว่าง Nav bar ของ destop (below) */
 #desktop a{
     margin-left: 16px;
+    
 }
 
 /* ----ตัว Learn something below ----*/
@@ -201,6 +208,9 @@ header{
     margin-top: 8px;
     margin-bottom: 8px;
 }
+.start-mobile{
+    display: none;
+}
 
 /* section thesis exhibit below */
 #thesis{
@@ -267,46 +277,131 @@ header{
 }
 
 /* Mobile */
-@media only screen and (max-width: 541px) {
+@media only screen and (max-width: 480px) {
     #desktop {
         display: none;
     }
     .holder-logo{
         display: none;
     }
-    #nav-mobile{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    *{
+        box-sizing: border-box;
     }
-    #learn {
-        width: 100%;
+    .container{
+        max-width:768px ;
+    }
+    #nav-mobile{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        height: 64px;
+    }
+    #learn{
+        width: 100vw;
         display: flex;
         flex-direction: column;
+        padding: 0;
+        margin: 0;
     }
-    .holder-img-header {
-        width: 100%;
+    .holder-img-header{
+        width: 100vw;
+        padding: 0;
+        margin: 0;
     }
     .header-learn{
-        width: 100%;
-    }
-    #holder-practice
-    {
-        width: 100%;
-        display: flex;
-        flex-direction: column;  
-        justify-content: center;
-    }
-    .practice
-    {
-        width: 100%;
-    }
-    .practice-column{
-        width: 100%;
-    }
+        width: 100vw;
+        font-size: 10px;
+        padding: 16px;
+        margin: 0;
+        margin-top: 32px;
+        margin-right: 16px;
 
-    
-    
-    
+    }
+    .header-learn h1{
+        font-size: 30px;
+    }
+    .header-learn button{
+        height: 32px;
+        width: 100%;
+        font-size: 15px;
+        margin-top: 24px;
+        margin-bottom: 32px;
+        padding: 0;
+        margin: 0;
+    /* practice */
+}
+    #holder-practice{
+        width: 100vw;
+        padding: 0;
+    }
+    .practice{
+        display: none;
+    }
+    .practice-column-2{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        
+        padding: 16px;
+        margin: 0;
+
+    }
+    .practice-column-2-content{
+        margin-left: 16px;
+        margin-bottom: 64px;
+        
+    }
+    .img-content{
+        width: 100%;
+        
+    }
+    /* Start Learning */
+    #startlearning{
+        width: 100vw;
+    }
+    .card-container{
+        display: none;
+    }
+    .start-mobile{
+        display: block;  
+    }
+    .start-mobile-card{
+        background-color: rgb(172, 172, 172);
+        padding-top: 16px;
+        padding-bottom: 24px;
+        padding-left: 16px;
+        margin-bottom: 8px;
+    }
+    .start-mobile-card:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .start-mobile-card:last-child{
+        margin-bottom: 32px;
+    }
+    /* thesis */
+    #thesis{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    }
+    .thesis-article1{
+        width: 100vw;
+    }
+    .thesis-video{
+        width: 100vw;
+    }
+    .thesis-video-content{
+        display: none;
+    }
+    .thesis-article2{
+        display: none;
+    }
+    /* footer */
+    #footer-copyrights{
+        width: 100vw;
+    }
+    .terms-privacy{
+        display: none;
+    }
 }
